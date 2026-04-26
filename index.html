@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+   <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #d01e1e, #912ae6);
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .card {
+            background: #f3e4b6;
+            padding: 30px;
+            border-radius: 15px;
+            width: 300px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #e83e8c;
+        }
+
+        select, input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #dc3545;
+            color: white;
+            border: none;
+            border-radius: 8px; pointer:
+        }
+
+        button:hover {
+            background: #c82333;
+        }
+
+        .chart {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Attendance Tracker</h2>
+
+        <form method="POST">
+            <label>Select Day</label>
+            <select name="day">
+                <option>Monday</option>
+                <option>Tuesday</option>
+                <option>Wednesday</option>
+                <option>Thursday</option>
+                <option>Friday</option>
+            </select>
+
+            <label>Absences</label>
+            <input type="number" name="absences" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
