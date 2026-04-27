@@ -1,4 +1,6 @@
+# Numerical Python and Matplotlib
 from pyscript import display, document
+import numpy as np
 import matplotlib.pyplot as plt
 
 # store data globally
@@ -19,9 +21,6 @@ def sample_numpy(event):
     # store data
     days.append(day)
     absences.append(absence)
-
-    # clear previous graph
-    document.getElementById('output').innerHTML = ""
 
     # create graph
     plt.figure()
