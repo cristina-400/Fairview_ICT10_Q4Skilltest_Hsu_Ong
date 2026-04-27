@@ -6,14 +6,18 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
     <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
 
+    <py-config>
+        packages = ['numpy', 'matplotlib']
+    </py-config>
     <style>
         body {
             margin: 0;
             font-family: Arial;
-            background: linear-gradient(to right, #d01e1e, #912ae6);
+            background: linear-gradient(to right, #d01e1e, #912ae6
+            );
         }
 
-        .container {
+        .container {    
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -60,7 +64,6 @@
         }
     </style>
 </head>
-
 <body>
 
 <div class="container">
@@ -90,10 +93,6 @@
 
 </div>
 
-<!-- LOAD YOUR PYTHON FILE -->
-<py-config>
-    files = ["main.py"]
-</py-config>
 
 <py-script src="main.py"></py-script>
 
